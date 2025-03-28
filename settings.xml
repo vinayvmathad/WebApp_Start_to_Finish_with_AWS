@@ -1,4 +1,13 @@
 <settings>
+
+<servers>
+  <server>
+    <id>devopsproject-nextwork-devops-cicd</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+
 <profiles>
   <profile>
     <id>devopsproject-nextwork-devops-cicd</id>
@@ -14,7 +23,6 @@
   </profile>
 </profiles>
 
-
 <mirrors>
   <mirror>
     <id>devopsproject-nextwork-devops-cicd</id>
@@ -24,12 +32,4 @@
   </mirror>
 </mirrors>
 
-<servers>
-	<server>
-		<id>devopsproject-nextwork-devops-cicd</id>
-		<username>aws</username>
-		<password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
-	</server>
-</servers>
 </settings>
-
